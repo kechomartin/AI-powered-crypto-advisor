@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/AI-powered-crypto-advisor/', // Ensure your repo name is here for GitHub Pages
+  base: '/AI-powered-crypto-advisor/', 
   build: {
     rollupOptions: {
       onLog(level, log, handler) {
