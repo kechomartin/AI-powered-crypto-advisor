@@ -100,3 +100,13 @@ crypto-advisor/
 | ⚠️ summaries are for educational utility and do not buy financial advice.  |
 +-------------------------------------------------------------+
 
+```
+
+
+### 🖥️ Platform Preview
+
+<p align="center">
+  <img src="./public/Screenshots/Screenshot1.png" alt="Market Matrix View" width="40%" />
+  <img src="./public/Screenshots/Screenshot2.png" alt="Wallet Academy Flow" width="40%" />
+  <img src="./public/Screenshots/Screenshot3.png" alt="Book Advisor Interface" width="40%" />
+</p>
