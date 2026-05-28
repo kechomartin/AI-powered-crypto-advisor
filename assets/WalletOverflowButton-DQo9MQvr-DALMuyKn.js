@@ -1,1 +1,0 @@
-import{Ro as e,bn as t,fn as n,hn as r}from"./index-Czqtyf6W.js";import{t as i}from"./wallet-CDO_4X2N.js";var a=e(),o=({onClick:e,text:o})=>(0,a.jsxs)(t,{onClick:e,children:[(0,a.jsx)(n,{children:(0,a.jsx)(i,{})}),(0,a.jsx)(r,{children:o})]});export{o as t};
