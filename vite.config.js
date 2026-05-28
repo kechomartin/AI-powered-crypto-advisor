@@ -1,18 +1,23 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
-  plugins: [react()],
-  base: '/AI-powered-crypto-advisor/', 
+export default defineConfig(({ command }) => ({
+  plugins: [
+    react(),
+    tailwindcss() 
+  ],
+  base: command === 'build' ? '/AI-powered-crypto-advisor/' : '/',
+  css: {
+    transformer: 'postcss' 
+  },
   build: {
+    cssMinify: 'esbuild',
     rollupOptions: {
       onLog(level, log, handler) {
-        // Silence annoying misplaced comment warnings from third-party npm packages
         if (log.code === 'INVALID_ANNOTATION') return;
-        
-        // Otherwise, let standard warnings/errors pass through normally
         handler(level, log);
       }
     }
   }
-})
+}))
