@@ -19,88 +19,129 @@ Built with a modular, configuration-driven schema, this application bridges trad
 
 ## 🗺️ Application Core Architecture Workflows
 
-### 1. Account Abstraction Onboarding Workflow
-Traditional crypto UX demands wallet extensions and seed phrase retention. This application uses an invisible infrastructure loop to onboarding users via Web2 credentials:
+### 🔄 System Runtime Pathways
+
+#### Account Abstraction Onboarding Workflow
+Traditional crypto onboarding forces users through manual wallet extensions and seed phrase retention. This system utilizes an abstract cryptographic key-management loop to initialize secure identities via frictionless Web2 credentials.
 
 ```text
-[User Social Auth Trigger] 
-       │
-       ▼
-[Privy Key-Sharding Engine (TEE/Shamir)]
-       │
-       ▼
-[ERC-4337 Embedded Smart Account Initialization]
-       │
-       ▼
-[Deterministic Address Injection into Global Application Context]
-
-[User Selects Crypto Asset Card]
-       │
-       ▼
-[React Intercepts State: Current Price, 24h Volatility, Cap Rank, High/Low Swings]
-       │
-       ▼
-[Structured Prompt Mapping Object Prepared]
-       │
-       ▼
-[Gemini AI Interface Core Engine Run via Edge API Rails]
-       │
-       ▼
-[Deterministic Structural Technical Analysis Modal Presentation Layer]
+  ┌───────────────────────────────┐
+  │   User Social Auth Trigger    │  ◄── Google, Apple, or Email authentication
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │  Privy Key-Sharding Engine    │  ◄── TEE / Shamir Secret Sharing infrastructure
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │   ERC-4337 Smart Account      │  ◄── Automatic embedded wallet orchestration
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │  Deterministic State Injection │  ◄── Injects secure address into AuthContext
+  └───────────────────────────────┘
 
 
+┌───────────────────────────────┐
+  │   User Selects Asset Card     │  ◄── Triggers interface element focus
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │  React State Interception    │  ◄── Grabs live Price, Volatility, & Caps
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │   Structured Prompt Mapping   │  ◄── Builds deterministic JSON analysis context
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │     Gemini Inference Run      │  ◄── Executes quant logic via secure Edge Rails
+  └───────────────┬───────────────┘
+                  │
+                  ▼
+  ┌───────────────────────────────┐
+  │   Technical Analysis Modal    │  ◄── Renders custom structured dashboard overlay
+  └───────────────────────────────┘
+
+  ---
+
+### 2. Repository File Architecture Tree
+
+```markdown
+### 📂 Directory Architecture
+
+```text
 crypto-advisor/
-├── .env                  # Hardware Cryptographic Keys & API Credentials
-├── index.html            # Core DOM Root Injection Target
-├── package.json          # Node Runtime Package Registry Configuration
-├── vite.config.js        # Vite Build Pipeline Directory Core Configuration
-└── src/
-    ├── main.jsx          # Context Provider Initialization Entrypoint
-    ├── App.jsx           # Global Tab Workspace Router Engine
-    ├── index.css         # Tailwind Core Framework Context Layer
-    ├── components/
-    │   ├── AccountCard.jsx    # Account Abstraction Interactive Controller
-    │   └── AdvisorModal.jsx   # Gemini Powered Quant Analysis Terminal Overlay
-    ├── data/
-    │   └── wallets.js         # JSON Extensible Multi-Chain Wallet Schema Registry
-    └── services/
-        ├── cryptoApi.js       # Production CoinGecko Data Integration Channel
-        └── aiApi.js           # Google Gen AI Framework Context Bridge
+ ├── .env                         ──  Hardware Cryptographic Keys & API Credentials
+ ├── index.html                   ──  Core DOM Root Injection Target
+ ├── package.json                 ──  Node Runtime Package Registry Configuration
+ ├── vite.config.js               ──  Vite Build Pipeline Directory Core Configuration
+ └── src/
+      ├── main.jsx                ──  Context Provider Initialization Entrypoint
+      ├── App.jsx                 ──  Global Tab Workspace Router Engine
+      ├── index.css               ──  Tailwind Core Framework Context Layer
+      │
+      ├── components/
+      │    ├── AccountCard.jsx    ──  Account Abstraction Interactive Controller
+      │    └── AdvisorModal.jsx   ──  Gemini Powered Quant Analysis Terminal Overlay
+      │
+      ├── data/
+      │    └── wallets.js         ──  JSON Extensible Multi-Chain Wallet Schema Registry
+      │
+      └── services/
+           ├── cryptoApi.js       ──  Production CoinGecko Data Integration Channel
+           └── aiApi.js           ──  Google Gen AI Framework Context Bridge
 
 
-+-----------------------------------------------------------------------------+
-|  CRYPTO-ADVISOR | AI HUB     |   [🟢 Global Active Terminal View Node Indicator] |
-|------------------------------|----------------------------------------------|
-| (📋) Market Matrix           |  Search Assets... [_______________________]   |
-| (👛) Wallet Academy          |----------------------------------------------|
-| (📅) Book Advisor            |                                              |
-|                              |  [Bitcoin BTC]      [Ethereum ETH]   [...]   |
-|                              |  $67,432.00         $3,512.20                |
-|                              |  [🔼 +3.42%]        [🔽 -1.15%]              |
-|------------------------------|                                              |
-| [🔒 Smart Account Active]    |                                              |
-| 0x74a...9b42 [Copy]          |                                              |
-| Gas-Sponsorship: Ready       |                                              |
-+-----------------------------------------------------------------------------+
+---
 
-+-------------------------------------------------------------+
-| 🪙 Bitcoin AI Terminal [Brain Engine Online]             [X] |
-|-------------------------------------------------------------|
-|  [Price: $67,432.00]   [24h Change: +3.42%]   [Rank: #1]    |
-|-------------------------------------------------------------|
-|  📊 Market Sentiment Profile                                |
-|  Macro momentum patterns reveal massive accumulation walls..|
-|                                                             |
-|  🛡️ Core Risk Assessment                                    |
-|  Immediate resistance clustered at $68,500 psychological zone|
-|                                                             |
-|  🎯 Strategic Position Recommendation                        |
-|  ACCUMULATION: Dollar-cost-average parameters active.      |
-|-------------------------------------------------------------|
-| ⚠️ summaries are for educational utility and do not buy financial advice.  |
-+-------------------------------------------------------------+
+### 3. Core Interface & AI Modal Blueprints
 
-```
+```markdown
+### 🖥️ Application UI Wireframes
+
+#### Global Active Work Environment
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CRYPTO-ADVISOR │ AI HUB                 │  [🟢 Global Active Terminal Node] │
+├──────────────────────────────┬──────────────────────────────────────────────┤
+│                              │  Search Assets... [_______________________]  │
+│  📋 Market Matrix            ├──────────────────────────────────────────────┤
+│  👛 Wallet Academy           │                                              │
+│  📅 Book Advisor             │  ┌──────────────┐  ┌──────────────┐  ┌──────┐│
+│                              │  │ Bitcoin BTC  │  │ Ethereum ETH │  │ ...  ││
+│                              │  │ $67,432.00   │  │ $3,512.20    │  │      ││
+│                              │  │ [🔼 +3.42%]  │  │ [🔽 -1.15%]  │  │      ││
+├──────────────────────────────┤  └──────────────┘  └──────────────┘  └──────┘│
+│                              │                                              │
+│ [🔒 Smart Account Active]    │                                              │
+│ 0x74a...9b42         [Copy]  │                                              │
+│ Gas-Sponsorship: Ready       │                                              │
+└──────────────────────────────┴──────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🪙 Bitcoin AI Terminal [Brain Engine Online]             [X] │
+├──────────────────────────────────────────────────────────────┤
+│  [Price: $67,432.00]   [24h Change: +3.42%]   [Rank: #1]     │
+├──────────────────────────────────────────────────────────────┤
+│  📊 Market Sentiment Profile                                 │
+│  Macro momentum patterns reveal massive accumulation walls.  │
+│                                                              │
+│  🛡️ Core Risk Assessment                                    │
+│  Immediate resistance clustered at $68,500 psychological zone│
+│                                                              │
+│  🎯 Strategic Position Recommendation                        │
+│  ACCUMULATION: Dollar-cost-average parameters active.        │
+├──────────────────────────────────────────────────────────────┤
+│ ⚠️ Summaries are educational and do not constitute advice.   │
+└──────────────────────────────────────────────────────────────┘
+  ```
 
 
 ### 🖥️ Platform Preview
