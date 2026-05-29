@@ -110,3 +110,24 @@ crypto-advisor/
   <img src="./public/Screenshots/Screenshot2.png" alt="Wallet Academy Flow" width="40%" />
   <img src="./public/Screenshots/Screenshot3.png" alt="Book Advisor Interface" width="40%" />
 </p>
+
+### 📊 System Runtime Pathway
+
+```text
+  ┌─────────────────────────────────────────────────────────┐
+  │                   VITE CLIENT ENGINE                    │
+  │  (React 19 Core App State & Tailwind CSS v4 Ecosystem)  │
+  └────────────────────────────┬────────────────────────────┘
+                               │
+            ┌──────────────────┼──────────────────┐
+            ▼                  ▼                  ▼
+┌──────────────────────┐ ┌───────────┐ ┌──────────────────────┐
+│     AUTH CONTEXT     │ │  ROUTER   │ │     SERVICES HUB     │
+│ (Active State Logic) │ │ (Routing) │ │ (Data Orchestration) │
+└───────────┬──────────┘ └─────┬─────┘ └──────────┬───────────┘
+            │                  │                  │
+            ▼                  ▼                  ▼
+┌──────────────────────┐ ┌───────────┐ ┌──────────────────────┐
+│      PRIVY SDK       │ │ BASE URL  │ │      COINGECKO       │
+│ Account Abstraction  │ │ Subfolder │ │ Live Market Metrics  │
+└──────────────────────┘ └───────────┘ └──────────────────────┘
