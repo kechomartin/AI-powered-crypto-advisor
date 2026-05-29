@@ -68,15 +68,14 @@ Traditional crypto onboarding forces users through manual wallet extensions and 
   ┌───────────────────────────────┐
   │   Technical Analysis Modal    │  ◄── Renders custom structured dashboard overlay
   └───────────────────────────────┘
-
+```
   ---
+  
 
 ### 2. Repository File Architecture Tree
 
-```markdown
-### 📂 Directory Architecture
-
-```text
+#### 📂 Directory Architecture
+```
 crypto-advisor/
  ├── .env                         ──  Hardware Cryptographic Keys & API Credentials
  ├── index.html                   ──  Core DOM Root Injection Target
@@ -98,16 +97,16 @@ crypto-advisor/
            ├── cryptoApi.js       ──  Production CoinGecko Data Integration Channel
            └── aiApi.js           ──  Google Gen AI Framework Context Bridge
 
-
+```
 ---
 
 ### 3. Core Interface & AI Modal Blueprints
 
-```markdown
 ### 🖥️ Application UI Wireframes
 
 #### Global Active Work Environment
-```text
+
+```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ CRYPTO-ADVISOR │ AI HUB                 │  [🟢 Global Active Terminal Node] │
 ├──────────────────────────────┬──────────────────────────────────────────────┤
@@ -143,7 +142,6 @@ crypto-advisor/
 └──────────────────────────────────────────────────────────────┘
   ```
 
-
 ### 🖥️ Platform Preview
 
 <p align="center">
@@ -172,3 +170,4 @@ crypto-advisor/
 │      PRIVY SDK       │ │ BASE URL  │ │      COINGECKO       │
 │ Account Abstraction  │ │ Subfolder │ │ Live Market Metrics  │
 └──────────────────────┘ └───────────┘ └──────────────────────┘
+```
