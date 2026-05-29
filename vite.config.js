@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/',
+  base: '/AI-powered-crypto-advisor/',
   build: {
     rollupOptions: {
       onLog(level, log, handler) {
